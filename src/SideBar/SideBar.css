@@ -10,6 +10,7 @@
 .invoice-bg-container {
     background-color: #f8f0e7;
     width:80%;
+    height: auto;
     padding-bottom: 20px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -20,20 +21,72 @@
 .invoice-card-container {
    border-radius: 15px;
    padding-top: 4px;
-   width: 60%;
+   width: 62%;
    background-color: #fff;
    margin: 15px;
+}
+.input-notes {
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    margin: 5px;
+    border: 1px solid #000;
+}
+.sub-container {
+    display: flex;
+    justify-content: space-between;
+}
+.sub {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.fee {
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    width: 120px;
+    margin: 5px;
+    text-align: center;
+    color: #848484;
+}
+.total-sub {
+    display: flex;
+    justify-content: space-around;
+    width: 38%;
+}
+.total-sub-parent {
+    display: flex;
+    justify-content: end;
+}
+.sub-label {
+    margin-top: 9px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #8f8f8f;
+}
+.sub-2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0px;
+}
+.first-container-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .invoice-card-container-2 {
     border-radius: 15px;
     padding: 5px;
-    width: 40%;
+    width: 38%;
     background-color: #fff;
     margin: 15px;
  }
 .top-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 40%;
 }
 .input-container {
     background-color: rgb(232, 235, 235);
@@ -113,6 +166,19 @@
     align-items: center;
     justify-content: center;
 }
+.create-button {
+    margin: 5px;
+}
+.input-notes{
+    width: 150px;
+}
+
+.sub {
+   width: 28%; 
+}
+.total-sub {
+    width: 25%;
+}
 .summery-container {
     display: flex;
     align-items: center;
@@ -142,7 +208,7 @@
     margin-left: 10px;
 }
 .card-title{
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 800;
     color: rgb(35, 34, 34);
     font-family: 'Courier New', Courier, monospace;
@@ -250,6 +316,106 @@ tr {
     margin: 10px;
     border: 1px solid #aeaeae;
 }
+.persons-list {
+    height: 30px;
+    border-radius: 8px;
+    width: 285px;
+    margin: 4px;
+}
+.number {
+    height: 28px;
+    border-radius: 8px;
+    border: 1px solid #aeaeae;
+    width: 245px;
+    margin: 4px;
+}
+.first-treatment-card {
+    background-color: #edecec;
+    padding: 5px;
+    width: 94%;
+    border: 1px solid #aeaeae;
+    border-radius: 5px;
+    margin: 11px;
+}
+.second-card-buts {
+    background-color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding-right: 30px;
+    font-weight: 500;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+}
+.card-1-inner {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.card-1-inner-2 {
+    display: flex;
+    justify-content: space-around;
+    width: 105%;
+}
+.treatment {
+    color: #aeaeae;
+    font-size: 13px;
+}
+.add-but {
+    background-color: #000;
+    height: 30px;
+    border: 0px;
+    width: 120px;
+    color: #fff;
+    border-radius: 8px;
+    margin: 4px;
+}
+.remove-but {
+    background-color: transparent;
+    height: 30px;
+    border: 1px solid #f78181;
+    width: 120px;
+    margin: 4px;
+    color: #ee7c7c;
+    border-radius: 8px;
+}
+.buts-con {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.anti-wrinkle {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+}
+.first-hr {
+    margin: 0px;
+    width: 99%;
+}
+.label {
+    font-size: 10px;
+    font-weight: 500;
+    color: #8f8f8f;
+    margin: 4px;
+}
+
+.create-line {
+    margin-bottom: 0px;
+    border: 1.2px solid #171616;
+    margin-top: 0px;
+}
+.create-line-1 {
+    margin-bottom: 0px;
+    border: 1.5px solid #171616;
+    margin-top: 0px;
+}
+.create {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+}
 .inprogress {
     background-color: rgb(250, 172, 46);
     border-radius: 10px;
@@ -299,7 +465,14 @@ tr {
 .notes-heading {
     font-weight: 600;
 }
-
+.save-buts-con {
+    display: flex;
+}
+.save {
+background-color: transparent;
+color: #000;
+border: 1px solid #000;
+}
 @media screen and (max-width: 780px) {
    .cards-container{
     display: flex;
@@ -318,14 +491,18 @@ tr {
    .invoice-bg-container {
     width: 100%;
    }
-   .button-container{
-    display: none;
+   .save-buts-con {
+    display: flex;
+    flex-direction: column;
    }
    .invoice-card {
-    height: 50vh;
+    height: 70vh;
    }
    .time {
     display: none;
+   }
+   .invoice-bg-container{
+    height: 200vh;
    }
    .date {
     display: none;
@@ -340,10 +517,13 @@ tr {
     justify-content: space-around;
    }
    .sub-title {
-    margin-top: 4px;
+    margin-top: 2px;
+    font-size: 8px;
    }
   }
-
+  .invoice-heading {
+    color: #908e8e;
+  }
   @media screen and (max-width: 576px) {
    .first-table-data {
     padding: 5px;
@@ -352,9 +532,15 @@ tr {
     font-size: 10px;
     line-height: 2rem;
    }
+   .fee {
+    width: 90px;
+}
    .sub-title {
     font-size: 10px;
     margin-top: 3px;
+   }
+   .card-1-inner{
+    width: 90%;
    }
    .input-container {
     width: 60%;
@@ -367,8 +553,31 @@ tr {
    .date-text {
     font-size: 9px;
    }
+   .second-card-buts{
+    padding-right: 10px;
+   }
+   .number{
+    width: 140px;
+   }
+   .card-1-inner-2{
+    width: 100%;
+   }
+   .add-but {
+    width: 90px;
+    height: 25px;
+   }
+   .remove-but {
+    width: 90px;
+    height: 25px;
+   }
+   .persons-list{
+    width: 160px;
+   }
    .icon-container {
     width: 20%;
+   }
+   .top-section{
+    width: 80%;
    }
    .icon {
     margin-top: 2px;
