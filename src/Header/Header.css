@@ -1,0 +1,37 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.time-date-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+.title{
+ font-size: 20px;
+ font-weight: 800;
+ line-height: 0cm;
+ color: rgb(35, 34, 34);
+ font-family: 'Courier New', Courier, monospace;
+ margin-bottom: 0px;
+ margin-left: 10px;
+}
+.sub-title {
+    font-size: 10px;
+    text-align:center;
+    margin-top:9px;
+}
+.bell-container {
+    background-color: rgb(245, 244, 242);
+    height: 40px;
+    width: 50px;
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+
+}
