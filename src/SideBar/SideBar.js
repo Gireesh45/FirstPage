@@ -1,8 +1,6 @@
 import './SideBar.css'
 import { FiPrinter } from "react-icons/fi";
-import { FaMicroscope } from "react-icons/fa";
-import { IoMic } from "react-icons/io5";
-import { TbNotes } from "react-icons/tb";
+import { CiEdit } from "react-icons/ci";
 export const SideBar = () => (
     <div className="side-invoice-container">
         <div className="bg-container">
@@ -37,158 +35,581 @@ export const SideBar = () => (
             <div className='cards-container'>
                 <div className="invoice-card-container">
                     <div className='top-section'>
-
+                        <div>
                         <p className='create'>Templates</p>
+                        <hr className='create-line-1' />
+                        </div>
                         <div>
                             <p className='create'>Create Invoice</p>
-                            <hr className='create-line-1' />
+                           
                         </div>
                     </div>
                     <hr className='create-line' />
-                    <div>
-                        <div className='first-container-input'>
-                            <div>
-                                <label for="cars" className='label'>Select a person:</label><br />
-
-                                <select name="cars" id="cars" className='persons-list'>
-                                    <option value="volvo">Select the person whom you will send this</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="mercedes">Mercedes</option>
-                                    <option value="audi">Audi</option>
-                                </select>
+                    <div className='templates-container'>
+                     <div className='invoice-card-2'>
+                            <div className='names-container-templates'>
+                                <p className="card-title-2">S K I N C L U B</p>
+                                <p className="card-sub-title-2">COSMOTIC DOCTORS</p>
                             </div>
-                            <div>
-                                <label className='label'>Invoice</label>
-                                <br />
-                                <input className='number' />
-                            </div><br />
-                        </div>
-                        <div className='first-container-input'>
-                            <div>
-                                <label for="cars" className='label'>Add a treatment:</label><br />
-
-                                <select name="cars" id="cars" className='persons-list'>
-                                    <option value="volvo">Select a treatment</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="mercedes">Mercedes</option>
-                                    <option value="audi">Audi</option>
-                                </select>
+                            <div className='summery-container'>
+                                <p className='summery-text-2'>SUMMERY</p>
+                                <hr className='summery-hr-line' />
                             </div>
+                            <div className='card-names-container-2'>
+                                <p className='names-2'>Dr Vihang</p>
+                                <p className='names-2'>Jane Doe</p>
+                            </div>
+                            <div className='table-container-2'>
+                                <table>
+                                    <tr>
+                                        <th className='th-element-template th-2'>Item</th>
+                                        <th className='th-2'>Rate</th>
+                                        <th className='th-2'>Qut</th>
+                                        <th className='th-element-2-template th-2'>Amount</th>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
 
+                                </table>
 
-
-                            <div>
-                                <label className='label'>Select Date</label>
-                                <br />
-                                <input className='number' placeholder='mm/dd/yyyy' />
+                            </div>
+                            <div className='sub-template-parent'>
+                            <div className='sub-template'>
+                                <p className='sub-total-2'>Subtotal</p>
+                                <p className='sub-total-2'>$540.00</p>
+                            </div>
+                            <div className='sub-template'>
+                                <p className='tax-text-2'>tax 5%</p>
+                                <p className='tax-text-2'>$00.00</p>
+                            </div>
+                            <div className='sub-template'>
+                                <p className='tax-text-2'>Discount 10%</p>
+                                <p className='tax-text-2'>$00.00</p>
+                            </div>
+                            </div>
+                            <hr />
+                            <div className='sub-template-parent'>
+                            <div className='sub-template'>
+                                <p className='sub-total-2'>total</p>
+                                <p className='sub-total-2'>$540.00</p>
+                            </div>
+                            </div>
+                            <div className='notes-2'>
+                                <p className='notes-text-2 notes-heading'>Notes/Terms</p>
+                                <p className='notes-text-2'>Lorem ipsum dolor sit amet.Sit ecue asssumenda qui</p>
                             </div>
                         </div>
-                    </div>
-                    <div className='first-treatment-card'>
-                        <div className='card-1-inner'>
-                            <p className='treatment'>Treatments</p>
-                            <p className='treatment'>Amount</p>
-                        </div>
-                        <hr className='first-hr' />
-                        <div className='card-1-inner-2'>
-                            <p className='anti-wrinkle'>Anti Wrinkle treatment</p>
-                            <p className='anti-wrinkle'>$1480</p>
-                            <div className='buts-con'>
-                                <button className='add-but'>Add</button>
-                                <button className='remove-but'>Remove</button>
+                        <div className='invoice-card-2'>
+                            <div className='names-container-templates'>
+                                <p className="card-title card-title-2">S K I N C L U B</p>
+                                <p className="card-sub-title-2">COSMOTIC DOCTORS</p>
+                            </div>
+                            <div className='summery-container'>
+                                <p className='summery-text-2'>SUMMERY</p>
+                                <hr className='summery-hr-line' />
+                            </div>
+                            <div className='card-names-container-2'>
+                                <p className='names-2'>Dr Vihang</p>
+                                <p className='names-2'>Jane Doe</p>
+                            </div>
+                            <div className='table-container-2'>
+                                <table>
+                                    <tr>
+                                        <th className='th-element-template th-2'>Item</th>
+                                        <th className='th-2'>Rate</th>
+                                        <th className='th-2'>Qut</th>
+                                        <th className='th-element-2-template th-2'>Amount</th>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+
+                                </table>
+
+                            </div>
+                            <div className='sub-template-parent'>
+                            <div className='sub-template'>
+                                <p className='sub-total-2'>Subtotal</p>
+                                <p className='sub-total-2'>$540.00</p>
+                            </div>
+                            <div className='sub-template'>
+                                <p className='tax-text-2'>tax 5%</p>
+                                <p className='tax-text-2'>$00.00</p>
+                            </div>
+                            <div className='sub-template'>
+                                <p className='tax-text-2'>Discount 10%</p>
+                                <p className='tax-text-2'>$00.00</p>
+                            </div>
+                            </div>
+                            <hr />
+                            <div className='sub-template-parent'>
+                            <div className='sub-template'>
+                                <p className='sub-total-2'>total</p>
+                                <p className='sub-total-2'>$540.00</p>
+                            </div>
+                            </div>
+                            <div className='notes-2'>
+                                <p className='notes-text-2 notes-heading'>Notes/Terms</p>
+                                <p className='notes-text-2'>Lorem ipsum dolor sit amet.Sit ecue asssumenda qui</p>
                             </div>
                         </div>
+                        <div className='invoice-card-2-md'>
+                            <div className='names-container-templates'>
+                                <p className="card-title card-title-2">S K I N C L U B</p>
+                                <p className="card-sub-title-2">COSMOTIC DOCTORS</p>
+                            </div>
+                            <div className='summery-container'>
+                                <p className='summery-text-2'>SUMMERY</p>
+                                <hr className='summery-hr-line' />
+                            </div>
+                            <div className='card-names-container-2'>
+                                <p className='names-2'>Dr Vihang</p>
+                                <p className='names-2'>Jane Doe</p>
+                            </div>
+                            <div className='table-container-2'>
+                                <table>
+                                    <tr>
+                                        <th className='th-element-template th-2'>Item</th>
+                                        <th className='th-2'>Rate</th>
+                                        <th className='th-2'>Qut</th>
+                                        <th className='th-element-2-template th-2'>Amount</th>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
 
-                    </div>
-                    <div className='first-treatment-card'>
-                        <div className='card-1-inner-2'>
-                            <p className='treatment'>Treatments</p>
-                            <p className='treatment'>Rate/per section</p>
-                            <p className='treatment'>no of section</p>
-                            <p className='treatment'>Total</p>
+                                </table>
+
+                            </div>
+                            <div className='sub-template-parent'>
+                            <div className='sub-template'>
+                                <p className='sub-total-2'>Subtotal</p>
+                                <p className='sub-total-2'>$540.00</p>
+                            </div>
+                            <div className='sub-template'>
+                                <p className='tax-text-2'>tax 5%</p>
+                                <p className='tax-text-2'>$00.00</p>
+                            </div>
+                            <div className='sub-template'>
+                                <p className='tax-text-2'>Discount 10%</p>
+                                <p className='tax-text-2'>$00.00</p>
+                            </div>
+                            </div>
+                            <hr />
+                            <div className='sub-template-parent'>
+                            <div className='sub-template'>
+                                <p className='sub-total-2'>total</p>
+                                <p className='sub-total-2'>$540.00</p>
+                            </div>
+                            </div>
+                            <div className='notes-2'>
+                                <p className='notes-text-2 notes-heading'>Notes/Terms</p>
+                                <p className='notes-text-2'>Lorem ipsum dolor sit amet.Sit ecue asssumenda qui</p>
+                            </div>
                         </div>
-                        <hr className='first-hr' />
-                        <div className='card-1-inner-2'>
-                            <button className='second-card-buts'>Hair Care Session</button>
-                            <button className='second-card-buts'>$145</button>
-                            <button className='second-card-buts'>$8</button>
-                            <button className='second-card-buts'>$1160</button>
+                        <div className='invoice-card-2'>
+                            <div className='names-container-templates'>
+                                <p className="card-title card-title-2">S K I N C L U B</p>
+                                <p className="card-sub-title-2">COSMOTIC DOCTORS</p>
+                            </div>
+                            <div className='summery-container'>
+                                <p className='summery-text-2'>SUMMERY</p>
+                                <hr className='summery-hr-line' />
+                            </div>
+                            <div className='card-names-container-2'>
+                                <p className='names-2'>Dr Vihang</p>
+                                <p className='names-2'>Jane Doe</p>
+                            </div>
+                            <div className='table-container-2'>
+                                <table>
+                                    <tr>
+                                        <th className='th-element-template th-2'>Item</th>
+                                        <th className='th-2'>Rate</th>
+                                        <th className='th-2'>Qut</th>
+                                        <th className='th-element-2-template th-2'>Amount</th>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+
+                                </table>
+
+                            </div>
+                            <div className='sub-template-parent'>
+                            <div className='sub-template'>
+                                <p className='sub-total-2'>Subtotal</p>
+                                <p className='sub-total-2'>$540.00</p>
+                            </div>
+                            <div className='sub-template'>
+                                <p className='tax-text-2'>tax 5%</p>
+                                <p className='tax-text-2'>$00.00</p>
+                            </div>
+                            <div className='sub-template'>
+                                <p className='tax-text-2'>Discount 10%</p>
+                                <p className='tax-text-2'>$00.00</p>
+                            </div>
+                            </div>
+                            <hr />
+                            <div className='sub-template-parent'>
+                            <div className='sub-template'>
+                                <p className='sub-total-2'>total</p>
+                                <p className='sub-total-2'>$540.00</p>
+                            </div>
+                            </div>
+                            <div className='notes-2'>
+                                <p className='notes-text-2 notes-heading'>Notes/Terms</p>
+                                <p className='notes-text-2'>Lorem ipsum dolor sit amet.Sit ecue asssumenda qui</p>
+                            </div>
                         </div>
-                        <div className='buts-con'>
-                            <button className='add-but'>Add</button>
-                            <button className='remove-but'>Remove</button>
                         </div>
-                    </div>
-                    {/* <div className='first-treatment-card'>
-            <div className='card-1-inner'>
-            <p>Treatments</p>
-            <p>Amount</p>
-            </div>
-            <hr/>
-          </div> */}
-                    <div className='first-treatment-card'>
-                        <div className='card-1-inner-2'>
-                            <p className='treatment'>Treatments</p>
-                            <p className='treatment'>Rate</p>
-                            <p className='treatment'>Qty</p>
-                            <p className='treatment'>Amount</p>
+                        <div className='templates-container'>
+                     <div className='invoice-card-2'>
+                            <div className='names-container-templates'>
+                                <p className="card-title card-title-2">S K I N C L U B</p>
+                                <p className="card-sub-title-2">COSMOTIC DOCTORS</p>
+                            </div>
+                            <div className='summery-container'>
+                                <p className='summery-text-2'>SUMMERY</p>
+                                <hr className='summery-hr-line' />
+                            </div>
+                            <div className='card-names-container-2'>
+                                <p className='names-2'>Dr Vihang</p>
+                                <p className='names-2'>Jane Doe</p>
+                            </div>
+                            <div className='table-container-2'>
+                                <table>
+                                    <tr>
+                                        <th className='th-element-template th-2'>Item</th>
+                                        <th className='th-2'>Rate</th>
+                                        <th className='th-2'>Qut</th>
+                                        <th className='th-element-2-template th-2'>Amount</th>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+
+                                </table>
+
+                            </div>
+                            <div className='sub-template-parent'>
+                            <div className='sub-template'>
+                                <p className='sub-total-2'>Subtotal</p>
+                                <p className='sub-total-2'>$540.00</p>
+                            </div>
+                            <div className='sub-template'>
+                                <p className='tax-text-2'>tax 5%</p>
+                                <p className='tax-text-2'>$00.00</p>
+                            </div>
+                            <div className='sub-template'>
+                                <p className='tax-text-2'>Discount 10%</p>
+                                <p className='tax-text-2'>$00.00</p>
+                            </div>
+                            </div>
+                            <hr />
+                            <div className='sub-template-parent'>
+                            <div className='sub-template'>
+                                <p className='sub-total-2'>total</p>
+                                <p className='sub-total-2'>$540.00</p>
+                            </div>
+                            </div>
+                            <div className='notes-2'>
+                                <p className='notes-text-2 notes-heading'>Notes/Terms</p>
+                                <p className='notes-text-2'>Lorem ipsum dolor sit amet.Sit ecue asssumenda qui</p>
+                            </div>
                         </div>
-                        <hr className='first-hr' />
-                        <div className='card-1-inner-2'>
-                            <button className='second-card-buts'>Vitamin A Night Serum</button>
-                            <button className='second-card-buts'>$90</button>
-                            <button className='second-card-buts'>$2</button>
-                            <button className='second-card-buts'>$180</button>
+                        <div className='invoice-card-2-md'>
+                            <div className='names-container-templates'>
+                                <p className="card-title card-title-2">S K I N C L U B</p>
+                                <p className="card-sub-title-2">COSMOTIC DOCTORS</p>
+                            </div>
+                            <div className='summery-container'>
+                                <p className='summery-text-2'>SUMMERY</p>
+                                <hr className='summery-hr-line' />
+                            </div>
+                            <div className='card-names-container-2'>
+                                <p className='names-2'>Dr Vihang</p>
+                                <p className='names-2'>Jane Doe</p>
+                            </div>
+                            <div className='table-container-2'>
+                                <table>
+                                    <tr>
+                                        <th className='th-element-template th-2'>Item</th>
+                                        <th className='th-2'>Rate</th>
+                                        <th className='th-2'>Qut</th>
+                                        <th className='th-element-2-template th-2'>Amount</th>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+
+                                </table>
+
+                            </div>
+                            <div className='sub-template-parent'>
+                            <div className='sub-template'>
+                                <p className='sub-total-2'>Subtotal</p>
+                                <p className='sub-total-2'>$540.00</p>
+                            </div>
+                            <div className='sub-template'>
+                                <p className='tax-text-2'>tax 5%</p>
+                                <p className='tax-text-2'>$00.00</p>
+                            </div>
+                            <div className='sub-template'>
+                                <p className='tax-text-2'>Discount 10%</p>
+                                <p className='tax-text-2'>$00.00</p>
+                            </div>
+                            </div>
+                            <hr />
+                            <div className='sub-template-parent'>
+                            <div className='sub-template'>
+                                <p className='sub-total-2'>total</p>
+                                <p className='sub-total-2'>$540.00</p>
+                            </div>
+                            </div>
+                            <div className='notes-2'>
+                                <p className='notes-text-2 notes-heading'>Notes/Terms</p>
+                                <p className='notes-text-2'>Lorem ipsum dolor sit amet.Sit ecue asssumenda qui</p>
+                            </div>
                         </div>
-                        <div className='card-1-inner-2'>
-                            <button className='second-card-buts'>Vitamin A Night Serum</button>
-                            <button className='second-card-buts'>$90</button>
-                            <button className='second-card-buts'>$2</button>
-                            <button className='second-card-buts'>$180</button>
+                        <div className='invoice-card-2'>
+                            <div className='names-container-templates'>
+                                <p className="card-title card-title-2">S K I N C L U B</p>
+                                <p className="card-sub-title-2">COSMOTIC DOCTORS</p>
+                            </div>
+                            <div className='summery-container'>
+                                <p className='summery-text-2'>SUMMERY</p>
+                                <hr className='summery-hr-line' />
+                            </div>
+                            <div className='card-names-container-2'>
+                                <p className='names-2'>Dr Vihang</p>
+                                <p className='names-2'>Jane Doe</p>
+                            </div>
+                            <div className='table-container-2'>
+                                <table>
+                                    <tr>
+                                        <th className='th-element-template th-2'>Item</th>
+                                        <th className='th-2'>Rate</th>
+                                        <th className='th-2'>Qut</th>
+                                        <th className='th-element-2-template th-2'>Amount</th>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+
+                                </table>
+
+                            </div>
+                            <div className='sub-template-parent'>
+                            <div className='sub-template'>
+                                <p className='sub-total-2'>Subtotal</p>
+                                <p className='sub-total-2'>$540.00</p>
+                            </div>
+                            <div className='sub-template'>
+                                <p className='tax-text-2'>tax 5%</p>
+                                <p className='tax-text-2'>$00.00</p>
+                            </div>
+                            <div className='sub-template'>
+                                <p className='tax-text-2'>Discount 10%</p>
+                                <p className='tax-text-2'>$00.00</p>
+                            </div>
+                            </div>
+                            <hr />
+                            <div className='sub-template-parent'>
+                            <div className='sub-template'>
+                                <p className='sub-total-2'>total</p>
+                                <p className='sub-total-2'>$540.00</p>
+                            </div>
+                            </div>
+                            <div className='notes-2'>
+                                <p className='notes-text-2 notes-heading'>Notes/Terms</p>
+                                <p className='notes-text-2'>Lorem ipsum dolor sit amet.Sit ecue asssumenda qui</p>
+                            </div>
                         </div>
-                        <div className='buts-con'>
-                            <button className='add-but'>Add</button>
-                            <button className='remove-but'>Remove</button>
+                        <div className='invoice-card-2'>
+                            <div className='names-container-templates'>
+                                <p className="card-title card-title-2">S K I N C L U B</p>
+                                <p className="card-sub-title-2">COSMOTIC DOCTORS</p>
+                            </div>
+                            <div className='summery-container'>
+                                <p className='summery-text-2'>SUMMERY</p>
+                                <hr className='summery-hr-line' />
+                            </div>
+                            <div className='card-names-container-2'>
+                                <p className='names-2'>Dr Vihang</p>
+                                <p className='names-2'>Jane Doe</p>
+                            </div>
+                            <div className='table-container-2'>
+                                <table>
+                                    <tr>
+                                        <th className='th-element-template th-2'>Item</th>
+                                        <th className='th-2'>Rate</th>
+                                        <th className='th-2'>Qut</th>
+                                        <th className='th-element-2-template th-2'>Amount</th>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='template-td'>Vitamin A Night Seerum</td>
+                                        <td className='template-td'>$9C</td>
+                                        <td className='template-td'>2</td>
+                                        <td className='template-td'>$180</td>
+                                    </tr>
+
+                                </table>
+
+                            </div>
+                            <div className='sub-template-parent'>
+                            <div className='sub-template'>
+                                <p className='sub-total-2'>Subtotal</p>
+                                <p className='sub-total-2'>$540.00</p>
+                            </div>
+                            <div className='sub-template'>
+                                <p className='tax-text-2'>tax 5%</p>
+                                <p className='tax-text-2'>$00.00</p>
+                            </div>
+                            <div className='sub-template'>
+                                <p className='tax-text-2'>Discount 10%</p>
+                                <p className='tax-text-2'>$00.00</p>
+                            </div>
+                            </div>
+                            <hr />
+                            <div className='sub-template-parent'>
+                            <div className='sub-template'>
+                                <p className='sub-total-2'>total</p>
+                                <p className='sub-total-2'>$540.00</p>
+                            </div>
+                            </div>
+                            <div className='notes-2'>
+                                <p className='notes-text-2 notes-heading'>Notes/Terms</p>
+                                <p className='notes-text-2'>Lorem ipsum dolor sit amet.Sit ecue asssumenda qui</p>
+                            </div>
                         </div>
-                    </div>
-                        
-                    <div>
-                        <label className='label'>Add Notes/Terms</label><br />
-                        <div className='input-notes'>
-                        <FaMicroscope />
                         </div>
-                    </div>
-                    <div className='sub-container'>
-                    <div>
-                        <label className='label'>Signature</label><br />
-                        <div className='input-notes'>
-                       <hr/>
-                        </div>
-                    </div>
-                    <div className='sub'>
-                        <p>Subtotal</p>
-                        <p>$540.00</p>
-                    </div>
-                    </div>
-                    <div className='sub-2'>
-                        <p className='sub-label'>Transaction fee</p>
-                        <div className='fee'>$00.00</div>
-                    </div>
-                    <div className='sub-2'>
-                        <p className='sub-label'>Discount 10%</p>
-                        <div className='fee'>$00.00</div>
-                    </div>
-                    <div className='total-sub-parent'>
-                    <div className='total-sub'>
-                       <p>Total</p>
-                       <p>$540.00</p>
-                    </div>
-                    </div>
                 </div>
                 <div className="invoice-card-container-2">
                     <div className='preview-container'>
                         <p className='preview-text'>Preview Invoice</p>
                         <div className='bell-container'>
+                        <CiEdit />
+                        </div>
+                        <div className='bell-container'>
+                           
                             <FiPrinter />
                         </div>
                     </div>

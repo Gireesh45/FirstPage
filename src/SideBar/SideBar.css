@@ -25,6 +25,16 @@
    background-color: #fff;
    margin: 15px;
 }
+.templates-container {
+    display: flex;
+}
+.invoice-card-container-templates {
+    border-radius: 15px;
+    padding-top: 4px;
+    width: 200px;
+    background-color: #fff;
+    margin: 15px;
+}
 .input-notes {
     height: 30px;
     width: 200px;
@@ -146,9 +156,23 @@
     margin-left: 5px;
 }
 .invoice-card {
-    height: 80vh;
+    height: 90vh;
     border: 1px solid #aeaeae;
     border-radius: 5px;
+    margin: 10px;
+}
+.invoice-card-2 {
+    border: 1px solid #aeaeae;
+    border-radius: 5px;
+    width: 300px;
+    height: 230px;
+    margin: 10px;
+}
+.invoice-card-2-md {
+    border: 1px solid #aeaeae;
+    border-radius: 5px;
+    width: 300px;
+    height: 230px;
     margin: 10px;
 }
 .create-button {
@@ -187,19 +211,34 @@
 .summery-hr-line {
     width: 75%;
     border: 1px solid #aeaeae;
+    margin: 0px;
 }
 .summery-text {
     font-size: 12px;
     font-family:Arial, Helvetica, sans-serif;
     margin-left: 10px;
 }
+.summery-text-2 {
+    font-size: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+}
 .card-names-container {
     display: flex;
-    width: 40%;
+    width: 50%;
+    justify-content: space-around;
+}
+.card-names-container-2{
+    display: flex;
+    width: 60%;
     justify-content: space-around;
 }
 .names {
     font-size: 12px;
+    font-weight: 500;
+}
+.names-2 {
+    font-size: 5px;
     font-weight: 500;
 }
 .preview-text {
@@ -208,20 +247,36 @@
     margin-left: 10px;
 }
 .card-title{
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 800;
     color: rgb(35, 34, 34);
     font-family: 'Courier New', Courier, monospace;
     margin-bottom: 0px;
     margin-left: 10px;
 }
+.card-title-2{
+    font-size: 6px;
+    font-weight: 800;
+    color: rgb(35, 34, 34);
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
 .card-sub-title {
 font-size: 7px;
 margin-top:3px;
 }
+.card-sub-title-2 {
+    font-size: 4px;
+    margin-top:3px;
+    }
 .names-container {
     text-align: center;
     width: 40%;
+}
+.names-container-templates {
+    text-align: center;
+    width: 50%;
 }
 .title-invoice-container {
     margin: 10px;
@@ -238,6 +293,14 @@ th {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 8px;
 }
+.th-2 {
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    /* height: 30px; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 5px;
+}
 .th-element {
     background-color: #000;
     color: #fff;
@@ -245,6 +308,14 @@ th {
     border-top-left-radius: 5px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 8px;
+}
+.th-element-template {
+    background-color: #000;
+    color: #fff;
+    border-top-left-radius: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 5px;
+    padding: 6px;
 }
 .virtual {
     background-color: #f4ede1;
@@ -262,11 +333,27 @@ th {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 8px; 
 }
+.th-element-2-template {
+    background-color: #000;
+    color: #fff;
+    padding: 7px;
+    border-top-right-radius: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 5px; 
+}
+
 td {
     font-size: 13px;
     font-weight: 400;
     text-align: center;
     padding: 5px;
+}
+.template-td {
+font-size: 4px;
+font-weight: 500;
+padding: 3px;
+line-height: 0.15cm;
+text-align: center;
 }
 .last {
     border-top-right-radius: 10px;
@@ -286,13 +373,17 @@ td {
     width: 90%;
     margin: 10px;
   }
+  .table-container-2 {
+    border-radius: 5px;
+    border: 1px solid #000 ;
+    height: 60px;
+    margin: 5px;
+
+  }
 .header-tr {
     background-color: #151515;
     border: 1px solid #000;
     height: 28px;
-}
-tr {
-    padding: 5px;
 }
 .table-text {
     font-size: 10px;
@@ -448,9 +539,33 @@ tr {
     font-weight: 500;
     margin-right: 10px;
 }
+.sub-total-2 {
+    font-size: 5px;
+    font-weight: 500;
+    margin-right: 6px;
+}
 .tax-text {
     color: #aeaeae;
     font-size: 12px;
+}
+.tax-text-2 {
+    color: #aeaeae;
+    font-size: 5px;
+    margin-right: 5px;
+}
+.sub-template {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    line-height: 0.01cm;
+    width: 45%;
+}
+.sub-template-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
 }
 .notes {
     background-color: #e6e4e4;
@@ -458,8 +573,17 @@ tr {
     margin: 10px;
     padding: 2px;
 }
+.notes-2{
+    background-color: #e6e4e4;
+    margin: 3px;
+    padding: 0.1px;
+}
 .notes-text {
     font-size: 10px;
+    margin: 5px;
+}
+.notes-text-2 {
+    font-size: 5px;
     margin: 5px;
 }
 .notes-heading {
@@ -484,6 +608,9 @@ border: 1px solid #000;
    .invoice-card-container{
     width: 90%;
     background-color: transparent;
+   }
+   .invoice-card-2-md {
+    display: none;
    }
    .invoice-card-container-2 {
     width: 90%;
