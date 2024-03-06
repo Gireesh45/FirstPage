@@ -151,13 +151,19 @@ export const SideBar = () => (
                             <button className='remove-but'>Remove</button>
                         </div>
                     </div>
-                    <div className='sub-container'>
+                        
                     <div>
                         <label className='label'>Add Notes/Terms</label><br />
                         <div className='input-notes'>
                         <FaMicroscope />
                         </div>
-
+                    </div>
+                    <div className='sub-container'>
+                    <div>
+                        <label className='label'>Signature</label><br />
+                        <div className='input-notes'>
+                       <hr/>
+                        </div>
                     </div>
                     <div className='sub'>
                         <p>Subtotal</p>

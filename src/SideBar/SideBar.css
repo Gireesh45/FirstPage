@@ -39,7 +39,7 @@
 .sub {
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 30%;
 }
 .fee {
     height: 25px;
@@ -53,7 +53,7 @@
 .total-sub {
     display: flex;
     justify-content: space-around;
-    width: 38%;
+    width: 20%;
 }
 .total-sub-parent {
     display: flex;
@@ -169,9 +169,9 @@
 .create-button {
     margin: 5px;
 }
-.input-notes{
+/* .input-notes{
     width: 150px;
-}
+} */
 
 .sub {
    width: 28%; 
@@ -467,6 +467,9 @@ tr {
 }
 .save-buts-con {
     display: flex;
+    padding-top: 100px;
+    align-items: center;
+    justify-content: center;
 }
 .save {
 background-color: transparent;
@@ -532,9 +535,6 @@ border: 1px solid #000;
     font-size: 10px;
     line-height: 2rem;
    }
-   .fee {
-    width: 90px;
-}
    .sub-title {
     font-size: 10px;
     margin-top: 3px;
